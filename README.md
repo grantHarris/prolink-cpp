@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-lightgrey.svg)](https://github.com/yourusername/prolink-cpp)
 
-A modern (C++17 my application limits me to 17 or older features) library for interacting with Pioneer DJ equipment using the **Pro DJ Link** protocol. Monitor beats, sync to tempo masters, and control CDJs.
+A modern (C++17 as my application limits me to 17 or older) library for interacting with Pioneer DJ equipment using the **Pro DJ Link** protocol. Monitor beats, sync to tempo masters, and control CDJs.
 
 ---
 
@@ -357,3 +357,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ### Third-Party Licenses
 - **GoogleTest** - BSD 3-Clause License (testing only)
+
+### Notice
+rekordbox™ and PRO DJ LINK™ are trademarks of AlphaTheta Corporation. This project or it's maintainers are not affiliated with, supported, or endorsed by AlphaTheta Corporation in any way shape or form.
+

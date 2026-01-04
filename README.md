@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-lightgrey.svg)](https://github.com/yourusername/prolink-cpp)
 
-A modern (C++17) library for interacting with Pioneer DJ equipment using the **Pro DJ Link** protocol. Monitor beats, sync to tempo masters, and control CDJs.
+A modern (C++17 my application limits me to 17 or older features) library for interacting with Pioneer DJ equipment using the **Pro DJ Link** protocol. Monitor beats, sync to tempo masters, and control CDJs.
 
 ---
 
@@ -251,35 +251,6 @@ ctest --output-on-failure
 
 ---
 
-## Credits & Acknowledgments
-
-This library would not be possible without the reverse-engineering work done by:
-
-### [dysentery](https://github.com/Deep-Symmetry/dysentery) by Deep Symmetry
-
-**Credit:** James Elliott ([@brunchboy](https://github.com/brunchboy)) and the Deep Symmetry team deserve credit for their meticulous documentation.
-- [dysentery Documentation](https://djl-analysis.deepsymmetry.org/)
-- [GitHub Repository](https://github.com/Deep-Symmetry/dysentery)
-
-### [prolink-connect](https://github.com/EvanPurkhiser/prolink-connect) by Evan Purkhiser
-
-prolink-connect is a full-featured library for Node.js that implements not only the core Pro DJ Link protocol but also the database query protocol for track metadata, beat grids, waveforms, and artwork.
-
-- [GitHub Repository](https://github.com/EvanPurkhiser/prolink-connect)
-- [NPM Package](https://www.npmjs.com/package/prolink-connect)
-
-### [beat-link](https://github.com/Deep-Symmetry/beat-link) by Deep Symmetry
-
-- [GitHub Repository](https://github.com/Deep-Symmetry/beat-link)
-- [Documentation](https://deepsymmetry.org/beatlink/)
-
-### Related Projects
-- [**beat-link-trigger**](https://github.com/Deep-Symmetry/beat-link-trigger) - Application for triggering events based on CDJ activity
-- [**crate-digger**](https://github.com/Deep-Symmetry/crate-digger) - Rekordbox database analysis
-- [**open-beat-control**](https://github.com/RubenInglada/open-beat-control) - Python library for Pro DJ Link
-
----
-
 ## Implementation Status
 
 This port is a work in progress and does not implement all aspects of the prolink protocol yet.
@@ -297,7 +268,6 @@ This port is a work in progress and does not implement all aspects of the prolin
 - Thread-safe API with exception-safe callbacks
 - Config validation with error reporting
 
-
 ---
 
 ## Known Issues & Limitations
@@ -306,14 +276,12 @@ This port is a work in progress and does not implement all aspects of the prolin
 - **Currently**: Linux and macOS only (POSIX sockets)
 
 ### Protocol Coverage
-- **Implemented**: Beat sync, status monitoring, device discovery, master handoff
 - **Not implemented**: Database queries, waveforms, artwork, NFS access
-
 
 ---
 
 ### External Resources
-- [dysentery Protocol Analysis](https://djl-analysis.deepsymmetry.org/) - Authoritative protocol docs
+- [dysentery Protocol Analysis](https://djl-analysis.deepsymmetry.org/)
 - [Pro DJ Link Research](https://github.com/Deep-Symmetry/dysentery/blob/master/doc/Analysis.pdf) - Protocol PDF
 
 ---
@@ -343,6 +311,44 @@ cmake --build .
 ctest --output-on-failure
 ```
 
+### Production Use
+This library has been tested with:
+- CDJ-3000
+
+
+## Community & Support
+
+- **Issues:** [GitHub Issues](https://github.com/yourusername/prolink-cpp/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/yourusername/prolink-cpp/discussions)
+
+---
+
+
+## Credits & Acknowledgments
+
+This library would not be possible without the reverse-engineering work done by:
+
+### [dysentery](https://github.com/Deep-Symmetry/dysentery) by Deep Symmetry
+
+James Elliott ([@brunchboy](https://github.com/brunchboy)) and the Deep Symmetry team deserve credit for their meticulous documentation.
+- [dysentery Documentation](https://djl-analysis.deepsymmetry.org/)
+- [GitHub Repository](https://github.com/Deep-Symmetry/dysentery)
+
+### [beat-link](https://github.com/Deep-Symmetry/beat-link) by Deep Symmetry
+
+- [GitHub Repository](https://github.com/Deep-Symmetry/beat-link)
+- [Documentation](https://deepsymmetry.org/beatlink/)
+
+### [prolink-connect](https://github.com/EvanPurkhiser/prolink-connect) by Evan Purkhiser
+
+- [GitHub Repository](https://github.com/EvanPurkhiser/prolink-connect)
+- [NPM Package](https://www.npmjs.com/package/prolink-connect)
+
+### Related Projects
+- [**beat-link-trigger**](https://github.com/Deep-Symmetry/beat-link-trigger) - Application for triggering events based on CDJ activity
+- [**crate-digger**](https://github.com/Deep-Symmetry/crate-digger) - Rekordbox database analysis
+- [**open-beat-control**](https://github.com/RubenInglada/open-beat-control) - Python library for Pro DJ Link
+
 ---
 
 ## License
@@ -351,31 +357,3 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ### Third-Party Licenses
 - **GoogleTest** - BSD 3-Clause License (testing only)
-
----
-
-## Community & Support
-
-- **Issues:** [GitHub Issues](https://github.com/yourusername/prolink-cpp/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/prolink-cpp/discussions)
-
-### Related Communities
-- [Deep Symmetry Discord](https://discord.gg/pcuxBmF) - DJ technology hacking
-- [r/Beatmatch](https://reddit.com/r/Beatmatch) - DJ community
-
----
-
-### Production Use
-This library has been tested with:
-- CDJ-3000
-
----
-
-## Special Thanks
-
-Special recognition to:
-- **James Elliott ([@brunchboy](https://github.com/brunchboy))** - For dysentery and the incredible documentation effort
-- **Evan Purkhiser ([@EvanPurkhiser](https://github.com/EvanPurkhiser))** - For prolink-connect and API design inspiration
-- **The Deep Symmetry team** - For their continued work on beat-link and the DJ technology ecosystem
-- **Pioneer DJ** - For creating the Pro DJ Link protocol
-
